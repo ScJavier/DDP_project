@@ -1,0 +1,65 @@
+---
+title       : Developing Data Products Project
+subtitle    : Iris miner. A simple explorer for Fisher's iris data set
+author      : Javier Santibanez
+job         : Coursera learner
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : mathjax       # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+---
+
+## Intro
+
+The Shiny App *Iris miner* lets you do a simple exploratory analysis of this famous data set. This data set contains  the measurements in centimeters of four variables (sepal length and width and petal length and width) for 50 flowers from each of 3 species of iris (Iris setosa, versicolor, and virginica).
+
+Fisher's iris is one of the most used data set to run examples of several statistical techniques.With this app you will be able to explore linear realionships between sepal and petal features of two species (versicolor and virginica).
+
+### What does *Iris miner* do?
+
+This application does two different tasks:
+
+- Print a scatterplot with an optional regression line
+- Print a basic summary of a regression model
+
+---
+
+## Features
+
+### How does *Iris miner* work?
+
+It is simple:
+
+1. Select a pair of variables, a sepal feature for the x axis and a petal feature for the y axis.
+
+2. Immediatly, *Iris miner* diplays a scatter plot of the variables you select. Also, you can checkout the *Show regression line* button to add to your plot a regression line. Remember, this ShinyApp is to explore linear relations!
+
+3. At the same time, *Iris miner* povides you some useful statistics related with the linear regression model: ANOVA table and estimated estandard error, $R^2$ and adjusted $R^2$ coefficients. 
+
+---
+
+## A little Example
+
+The following plot seems like the one you can get from *Iris miner*, so what is the difference? You do not need to know how `R` works neither write `R` code, what you only need is to give some clicks! 
+
+
+```r
+library(ggplot2); data(iris); irisData = iris[iris$Species != "setosa",]
+ggplot(data = irisData, aes(x = Sepal.Width, y = Petal.Width)) +
+  geom_point(size = 4, colour = "steelblue") +
+  geom_smooth(method = "lm", colour = "coral", size = 1, se = FALSE, linetype = 2)
+```
+
+<img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
+
+---
+
+## Further information
+
+- You can access to *Iris miner* [here](https://scjavier.shinyapps.io/IrisMiner).
+
+- *Iris miner* was developed as part of the course *Developing Data Products* from [Coursera](https://www.coursera.org).
+
+- For more information about Fisher's iris data set you can click [here](https://en.wikipedia.org/wiki/Iris_flower_data_set).
+
