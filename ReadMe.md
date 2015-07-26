@@ -9,7 +9,7 @@ This repo contains files of my final project for the course Developing Data Prod
 
 If you want to see the presentation please click [here](http://scjavier.github.io/DDP_project/Presentation/index.html).
 
-If you want to see the ShinyApp please click here.
+If you want to see the ShinyApp please click [here](https://scjavier.shinyapps.io/IrisMiner).
 
 Finally, if you want to see what is all of this about, just read below.
 
