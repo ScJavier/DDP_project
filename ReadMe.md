@@ -7,7 +7,7 @@ This repo contains files of my final project for the course Developing Data Prod
 - Presentation: It contains files for the Slidify presentation.
 - ShinyApp: Files for the shiny app.
 
-If you want to see the presentation please click [here](http://scjavier.github.io/DDP_project/Presentation/index.html).
+If you want to see the presentation please click [here](http://scjavier.github.io/DDP_project/SlidifyPres/IrisMiner_pres.html).
 
 If you want to see the ShinyApp please click [here](https://scjavier.shinyapps.io/IrisMiner).
 
